@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🌱 Focus Garden</h1>
+        <p class="subtitle">Grow your plants with focus and care.</p>
+
+        <div class="stats">
+            <div class="stat-card">
+                <span class="stat-value" id="completedSessions">0</span>
+                <span class="stat-label">Completed</span>
+            </div>
+            <div class="stat-card">
+                <span class="stat-value" id="totalMinutes">0</span>
+                <span class="stat-label">Minutes</span>
+            </div>
+             <div class="stat-card">
+                <span class="stat-value" id="streak">0</span>
+                <span class="stat-label">Streak</span>
+            </div>
+        </div>
+
+        <div class="garden-container">
+            <div class="plant plant-stage-0" id="plant">
+                <div class="seed"></div>
+                <div class="sprout">🌱</div>
+                <div class="small-plant">🌿</div>
+                <div class="medium-plant">🪴</div>
+                <div class="large-plant">🌳</div>
+            </div>
+            <div class="grass"></div>
+            <div class="ground"></div>
+        </div>
+
+        <div class="task-section">
+            <h2>Tasks</h2>
+            <div class="task-input-container">
+                <input type="text" class="task-input" id="taskInput" placeholder="Add a Task" maxlength="100">
+                <button class="add-task-btn" id="addTaskBtn">Add</button>
+            </div>
+            <div class="task-list" id="taskList">
+                <div class="empty-tasks">No tasks yet. Add one to get started.</div>
+            </div>
+        </div>
+
+        <div class="mode-selector">
+            <button class="mode-btn active" data-mode="focus" data-time="25">Focus (25m)</button>
+               <button class="mode-btn active" data-mode="short" data-time="5">Short (5m)</button>
+                  <button class="mode-btn active" data-mode="long" data-time="15">Long (15m)</button>
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressBar"></div>
+        </div>
+
+        <div class="timer-display" id="timerDisplay">25:00</div>
+        <div class="timer-label" id="timerLabel">Focus Time</div>
+
+        <div class="controls">
+            <button class="btn-primary" id="startBtn">Start</button>
+            <button class="btn-secondary" id="resetBtn">Reset</button>
+        </div>
+
+        <div class="message" id="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
