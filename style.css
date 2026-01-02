@@ -396,8 +396,8 @@ button:disabled {
 
 .empty-tasks {
     text-align: center;
-    color:  #a0aec0;
-    font-size: 14px;
+    color:  white;
+    font-size: 24px;
     padding: 24px;
 }
 
